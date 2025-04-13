@@ -4,7 +4,7 @@ agent any
   stage('Create build output') {
    steps {
     script {
-     // Make the output directory.
+     // Make the output directory heres.
      sh "mkdir -p output"
      // Write a useful file, which is needed to be archived.
      writeFile file: "output/usefulfile.txt", text: "This file is useful, need to archive it."
@@ -21,3 +21,4 @@ agent any
    }
   }
 }
+
